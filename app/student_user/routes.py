@@ -1,7 +1,7 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
-student = Blueprint('student',__name__)
+student = Blueprint('student',__name__,template_folder='templates')
 
 @student.route('/', methods = ['GET'])
 def index():
-    return 'working!'
+    return render_template('index.html')
