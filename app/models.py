@@ -21,5 +21,5 @@ class Appointments(db.Model):
     name = db.Column(db.String(45),index = True)
     email = db.Column(db.String(45),index = True)
     app_type = db.Column(db.String(45),index = True)
-    date = db.Column(db.String(34),index = True)
-    time = db.Column(db.Strin(34),index = True)
+    date_time = db.Column(db.DateTime(),index = True)
+    
